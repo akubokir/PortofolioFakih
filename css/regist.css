@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(60, 61, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-wrapper{
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1)
+}
+.form-containner{
+    padding: 40px;
+    width: 360px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(60, 61, 35);
+}
+p{
+    margin-bottom: 20px;
+    color: rgb(60, 61, 35);
+}
+.gabungan{
+    position: relative;
+    margin-bottom: 0px;
+}
+.gabungan input{
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+.gabungan input:focus{
+    border-color: rgb(60, 61, 35);
+    outline: none;
+}
+.gabungan label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:rgb(60, 61, 35);
+    font-size: 14px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.gabungan input:focus + label,
+.gabungan input:not(:placeholder-shown) + label {
+    top: 10px;
+    left: 15px;
+    font-size: 12px;
+    color: rgb(60, 61, 35);
+}
+.button{
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(60, 61, 35);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #ccc;
+}
+.links{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+}
+.links a{
+    color: rgb(60, 61, 35);
+    text-decoration: none;
+    transition: color 0.3s;
+}
